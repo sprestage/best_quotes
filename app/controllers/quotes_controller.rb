@@ -28,14 +28,4 @@ class QuotesController < Rulers::Controller
     render :quote, :obj => m
   end
 
-  def update_quote
-    attrs = {
-      "submitter" => "web user"
-      "quote" => "A picture is worth a thousand words",
-      "attribution" => "anonymous"
-    }
-    m = FileModel.edit attrs
-    render :quote, :obj => m
-  end
-
 end
