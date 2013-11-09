@@ -28,14 +28,9 @@ class QuotesController < Rulers::Controller
     render :quote, :obj => m
   end
 
-  def update_quote
-    attrs = {
-      "submitter" => "web user"
-      "quote" => "A picture is worth a thousand words",
-      "attribution" => "anonymous"
-    }
-    m = FileModel.edit attrs
-    render :quote, :obj => m
+  def show
+    quote = FileModel.find(params["id"])
+    ua = request.user_agent
+    render :quote, :obj => quote, :ua => ua
   end
-
 end
