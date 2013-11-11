@@ -38,4 +38,4 @@ COMMENT: Another bug was where I accidentally had the implicitly returned array 
 
 ## Branch chapter_6
 
-Over in Rulers, I implemented requests with rack.  Now update the show action to show what browser (and other environment details) is being used.
+Over in Rulers, I implemented requests with rack.  Now update the show action to show what browser (and other environment details) is being used.  Responses are implemented too, so we'll render a response.
